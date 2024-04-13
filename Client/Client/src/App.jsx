@@ -1,10 +1,17 @@
 
+import {BrowserRouter, Routes, Route} from "react-router-dom"
+import Auth from "../src/Screens/Auth"
+import Home from "../src/Screens/Home"
+
 function App() {
 
   return (
-    <div>
-      <h1 className="text-red-200 bg-green-200">Social Media </h1>
-    </div>
+    <BrowserRouter>
+        <Routes>
+            <Route path="/" element={<Auth/>}/>
+            <Route path="/home" element={<Home/>} />
+        </Routes>
+    </BrowserRouter>
   )
 }
 
