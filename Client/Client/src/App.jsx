@@ -1,4 +1,3 @@
-
 import {BrowserRouter, Routes, Route} from "react-router-dom"
 import Auth from "../src/Screens/Auth"
 import Home from "../src/Screens/Home"
